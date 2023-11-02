@@ -1,0 +1,291 @@
+body{
+	font-family: Arial, Roboto, Epilogue, sans-serif;
+	margin:0px;
+	font-size:20px;
+	background-color:#eee;
+}
+p, table{
+	color:#c88e2c;
+	margin-top:16px;
+	margin-bottom:16px;
+	line-height:30px;
+	text-align:justify;
+	text-shadow: 0.5px 0.5px 1px black;
+}
+header{
+	background: rgb(189, 189, 189);
+	background: linear-gradient(90deg, rgba(255, 255, 255,1) 5%, rgba(73,169,246,1) 48%, rgba(183,240,255,1) 100%);
+	background-size: 300% 100%;
+	animation: gradient 10s ease infinite;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	width:100%;
+	height:20vh;
+}
+main{
+	margin-top:50px;
+	margin-bottom:50px;
+	height:auto;
+	margin-left:3%;
+	margin-right:3%;
+}
+aside{
+	background-color:#ccc;
+	border-style:solid;
+	border-color:#aaa;
+	border-width:5px;
+}
+a:link, a:visited{
+	text-decoration:none;
+	color:#ffffff;
+	text-shadow: 0px 0px 7px black;
+}
+a:hover{
+	color:#f2ba00;
+}
+footer{
+	background: rgb(189, 189, 189);
+	background: linear-gradient(90deg, rgba(255, 255, 255,1) 5%, rgba(73,169,246,1) 48%, rgba(183,240,255,1) 100%);
+	background-size: 300% 100%;
+	animation: gradient 10s ease infinite;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	height:20vh;
+}
+.territorio{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+.territorio img{
+	display:block;
+	width:400px;
+	height:500px;
+	margin-left:auto;
+	margin-right:auto;
+	border-style:ridge;
+	border-radius:10%;
+	border-color:#42d3ff;
+	border-width:5px;
+}
+h1{
+	color:#f2ba00;
+	text-align:center;
+	text-shadow: 1px 1px 3px black;
+}
+h2{
+	color:#f5d836;
+	text-align:center;
+	text-shadow: 1px 1px 3px black;
+}
+h3{
+	color:#f5d836;
+	text-align:center;
+	text-shadow: 1px 1px 3px black;
+}
+iframe{
+	display:block;
+	margin:auto;
+	margin-bottom:5vh;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%; 
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+td{
+	border-style:ridge;
+	border-color:#42d3ff;
+	border-width:5px;
+	background-color:#fcfeff;
+}
+b{
+	color:#2087d6;
+}
+.turismo{
+	display:flex;
+	justify-content:center;
+	flex-direction:column;
+}
+.turismo p{
+	font-size:30px;
+	text-align:center;
+}
+.padreficha{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:center;
+}
+.fichas{
+	text-align:justify;
+	background-color:#eaeaff;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	margin-left:50px;
+	width:25%;
+	height:auto;
+	margin:20px;
+	padding:2%;
+	border-style:ridge;
+	border-radius:10%;
+	border-color:#42d3ff;
+	border-width:5px;
+}
+.fichas img{
+	display:block;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius:20px;
+}
+.regiones{
+	text-align:justify;
+	display:flex;
+}
+.regiones p{
+	margin-bottom:0px;
+	margin-top:20px;
+}
+.litoral{
+	background-color:#b3e5b0;
+	border-style:ridge;
+	border-radius:10%;
+	border-color:#42d3ff;
+	border-width:5px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	margin-left:50px;
+	width:25%;
+	height:auto;
+	margin:20px;
+	padding:2%;
+	
+}
+.litoral p{
+	color:#194db3;
+	text-align:justify;
+	font-size:15px;
+	line-height:20px;
+}
+.chaco{
+	background-color:#ff41fc;
+	border-style:ridge;
+	border-radius:10%;
+	border-color:#42d3ff;
+	border-width:5px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	margin-left:50px;
+	width:25%;
+	height:auto;
+	margin:20px;
+	padding:2%;
+}
+.chaco p{
+	color:#e4e4e4;
+	text-align:justify;
+	font-size:15px;
+	line-height:20px;
+}
+.llanura{
+	background-color:#a4a154;
+	border-style:ridge;
+	border-radius:10%;
+	border-color:#42d3ff;
+	border-width:5px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	margin-left:50px;
+	width:25%;
+	height:auto;
+	margin:20px;
+	padding:2%;
+}
+.llanura p{
+	color:#e4e4e4;
+	text-align:justify;
+	font-size:15px;
+   	line-height:20px;
+}
+.noroeste{
+	background-color:#fbc66a;
+	border-style:ridge;
+	border-radius:10%;
+	border-color:#42d3ff;
+	border-width:5px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	margin-left:50px;
+	width:25%;
+	height:auto;
+	margin:20px;
+	padding:2%;
+}
+.noroeste p{
+	color:#194db3;
+	text-align:justify;
+	font-size:15px;
+    	line-height:20px;
+}
+.litoral h2{
+	color:#88acdd;
+}
+.noroeste h2{
+	color:#88acdd;
+}
+.patri{
+	display:flex;
+	flex-direction:row;
+	width:96%;
+	align-items: center;
+	margin:5px;
+}
+.patri img{
+	height:200px;
+	width:30%;
+	display:block;
+	height:auto;
+	margin-left:20px;
+	margin-right:20px;
+	border-style:ridge;
+	border-radius:40px;
+	border-color:#fabf57;
+	border-width:5px;
+}
+.patri p{
+	color:#f7be54;
+	text-align:justify;
+	font-size:18px;
+    	line-height:25px;
+	width:53%;
+}
+.patri h3{
+	width:17%;
+	text-align:left;
+	margin:1%;
+}
+.patrimayor{
+	display:flex;
+	flex-direction: column;
+  	align-items: center;
+	border-style:ridge;
+	border-radius:40px;
+	border-color:#f7be54;
+	border-width:5px;
+	padding:2%;
+	background-color:#7dc4ff;
+}
