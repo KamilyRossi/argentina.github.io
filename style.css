@@ -1,16 +1,23 @@
+@font-face{
+font-family: "KG Red Hands";
+src:url("imagenes/KGRedHands.ttf");
+}
 body{
-	font-family: Arial, Roboto, Epilogue, sans-serif;
+	font-family: "KG Red Hands"; /*Arial, Roboto, Epilogue, sans-serif;*/
 	margin:0px;
 	font-size:20px;
 	background-color:#eee;
 }
-p, table{
+p, table, table a:link, table a:visited{
 	color:#c88e2c;
 	margin-top:16px;
 	margin-bottom:16px;
 	line-height:30px;
 	text-align:justify;
 	text-shadow: 0.5px 0.5px 1px black;
+}
+table a:hover{
+	color:#a86e0c;
 }
 header{
 	background: rgb(189, 189, 189);
@@ -22,6 +29,9 @@ header{
 	align-items:center;
 	width:100%;
 	height:20vh;
+}
+.logo img{
+	height:auto;
 }
 main{
 	margin-top:50px;
@@ -71,19 +81,28 @@ footer{
 	border-width:5px;
 }
 h1{
+	font-size:35px;
 	color:#f2ba00;
 	text-align:center;
 	text-shadow: 1px 1px 3px black;
+	margin-top:7vh;
+	margin-bottom:7vh;
 }
 h2{
+	font-size:30px;
 	color:#f5d836;
 	text-align:center;
 	text-shadow: 1px 1px 3px black;
+	margin-top:7vh;
+	margin-bottom:7vh;
 }
 h3{
+	font-size:25px;
 	color:#f5d836;
 	text-align:center;
 	text-shadow: 1px 1px 3px black;
+	margin-top:7vh;
+	margin-bottom:7vh;
 }
 iframe{
 	display:block;
@@ -123,34 +142,37 @@ b{
 	display:flex;
 	flex-direction:row;
 	flex-wrap:wrap;
-	justify-content:center;
+	justify-content:space-around;
+	border-style:ridge;
+	border-radius:40px;
+	border-color:#f7be54;
+	border-width:5px;
+	background-color:#7dc4ff;
 }
 .fichas{
-	text-align:justify;
-	background-color:#eaeaff;
+	text-align:center;
 	display:flex;
 	flex-direction:column;
 	justify-content:center;
-	margin-left:50px;
-	width:25%;
+	background-color:#eaeaff;
+	width:30%;
 	height:auto;
-	margin:20px;
-	padding:2%;
+	margin-top:10px;
+	margin-bottom:10px;
 	border-style:ridge;
 	border-radius:10%;
-	border-color:#42d3ff;
+	border-color:#f7be54;
 	border-width:5px;
 }
 .fichas img{
-	display:block;
-	height:auto;
-	margin-left:auto;
-	margin-right:auto;
+	height:90%;
+	width:90%;
 	border-radius:20px;
 }
 .regiones{
-	text-align:justify;
 	display:flex;
+	flex-wrap:wrap;
+	text-align:justify;
 }
 .regiones p{
 	margin-bottom:0px;
@@ -166,7 +188,7 @@ b{
 	flex-direction:column;
 	align-items:center;
 	margin-left:50px;
-	width:25%;
+	width:40%;
 	height:auto;
 	margin:20px;
 	padding:2%;
@@ -188,7 +210,7 @@ b{
 	flex-direction:column;
 	align-items:center;
 	margin-left:50px;
-	width:25%;
+	width:40%;
 	height:auto;
 	margin:20px;
 	padding:2%;
@@ -209,7 +231,7 @@ b{
 	flex-direction:column;
 	align-items:center;
 	margin-left:50px;
-	width:25%;
+	width:40%;
 	height:auto;
 	margin:20px;
 	padding:2%;
@@ -230,7 +252,7 @@ b{
 	flex-direction:column;
 	align-items:center;
 	margin-left:50px;
-	width:25%;
+	width:40%;
 	height:auto;
 	margin:20px;
 	padding:2%;
@@ -267,10 +289,10 @@ b{
 	border-width:5px;
 }
 .patri p{
-	color:#f7be54;
+	color:#f7de84;
 	text-align:justify;
 	font-size:18px;
-    	line-height:25px;
+    line-height:25px;
 	width:53%;
 }
 .patri h3{
@@ -288,4 +310,194 @@ b{
 	border-width:5px;
 	padding:2%;
 	background-color:#7dc4ff;
+}
+.miDiv {
+    display: none;
+    padding: 20px;
+    margin-top:5vh;
+	margin-bottom:5vh;
+	border-style:solid;
+	border-color:#000;
+	border-width:5px;
+}
+.miDiv.mostrando {
+    display: flex;
+	flex-direction:column;
+	align-items:center;
+	background-color:#688cbd;
+	text-align:justify;
+	border-style:ridge;
+	border-color:#d7ae34;
+	border-width:5px;
+}
+.miDiv p{
+	color:#fff;
+}
+.historia{
+	display:flex;
+	flex-direction: column;
+  	align-items: center;
+}
+button{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items:center;
+	text-shadow:1px 1px 2px #222;
+	border-style:ridge;
+	border-color:#f7be54;
+	border-width:5px;
+	width:75%;
+	padding-top:5vh;
+	padding-bottom:5vh;
+	margin-top:2vh;
+	margin-bottom:2vh;
+	background-color:#88acdd;
+	font-family: "KG Red Hands";
+	font-size:20px;
+	color:#f2ba00;
+	text-align:center;
+}
+button:hover{
+	background-color:gray;
+}
+button img{
+	width:3%;
+	height:auto;
+	margin-right:3%;
+	margin-left:3%;
+}
+.cyc{
+	color:#f2ba00;
+}
+.comidas{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:space-evenly;
+	align-items:center;
+}
+.recetas{
+	display:flex;
+	flex-direction:column;
+	width:33%;
+	padding:2%;
+}
+.recetas h2{
+	font-size:20px;
+}
+.recetas img{
+	width:100%;
+	border-style:ridge;
+	border-radius:10%;
+	border-color:#42d3ff;
+	border-width:5px;
+}
+.creditos{
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	list-style-type: none
+}
+.creditos li{
+	margin-top:5vh;
+	margin-bottom:5vh;
+}
+.creditos img{
+	height:5vh;
+}
+#fechahoy{
+	font-size:15px;
+}
+/* - - - - - Media Queries - - - - - */
+
+@media screen and (max-width:800px)
+{
+	main{
+		display:flex;
+		flex-direction:column;
+		align-content:center;
+	}
+	header, footer{
+		flex-direction:column;
+		height:auto;
+		padding-top:2vh;
+		padding-bottom:2vh;
+	}
+	.logo img, footer img{
+		height:25vh;
+	}
+	.padreficha{
+		flex-direction:column;
+		align-items:center;
+	}
+	.fichas{
+		width:90%;
+		height:auto;
+		margin-top:2vh;
+		margin-bottom:2vh;
+	}
+	header a, footer a{
+		margin-top:1vh;
+		margin-bottom:1vh;
+		font-size:30px;
+	}
+	aside{
+		margin:-12px;
+		margin-top:-50px;
+	}
+	.territorio img{
+		width:90%;
+	}
+	.regiones{
+		flex-direction:column;
+		align-content:center;
+	}
+	.chaco, .llanura, .noroeste, .litoral{
+		width:90%;
+		padding-bottom:4vh;
+	}
+	.miDiv.mostrando{
+		width:95%;
+		padding:1%;
+	}
+	.miDiv.mostrando a{
+		width:75%;
+	}
+	.miDiv.mostrando img{
+		width:100%;
+	}
+	iframe{
+		width:98%;
+		height:50vh;
+	}
+	.patri{
+		flex-direction:column;
+		margin-bottom:8vh;
+	}
+	.patri img, .patri h3, .patri p{
+		width:100%;
+	}
+	#vlightbox1, .vlightbox1{
+		width:100%;
+		flex-direction:column;
+		align-content:center;
+	}
+	button{
+		width:90%;
+	}
+	button img{
+		width:10%;
+	}
+	.comidas{
+		flex-direction:column;
+	}
+	.recetas{
+		width:90%;
+		align-items:center;
+	}
+	.creditos{
+		flex-direction:column;
+		margin-right:10%;
+	}
 }
